@@ -1,0 +1,126 @@
+.container-section.solo-section {
+  min-height: 100vh;
+  align-items: center;
+
+  .title-section {
+    align-self: flex-start;
+  }
+
+  .section {
+    margin: 30px 0;
+    overflow-y: hidden;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title-section-background {
+  @include screen-m {
+    @include filter-background;
+    border-bottom: 1px solid $color-white;
+  }
+}
+
+.container-section {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+
+  &:last-child {
+    margin-bottom: 50vh;
+  }
+
+  @include screen-m {
+    display: block;
+    flex-direction: column;
+  }
+
+  .title-section {
+    grid-column: 2/3;
+    z-index: 9;
+
+    @include screen-m {
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+
+    h2 {
+      position: sticky;
+      color: $color-black;
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      top: 0;
+      padding-top: 220px;
+      line-height: 220px;
+
+      @include screen-m {
+        line-height: 100px;
+        padding: 0 clamp(20px, 4vw, 60px);
+        padding-top: 0;
+        writing-mode: initial;
+        text-orientation: initial;
+      }
+    }
+  }
+
+  .section {
+    grid-row: 1/2;
+    width: 100%;
+
+    padding: 0 clamp(20px, 4vw, 60px);
+    margin: 220px 0 30px 0;
+
+    @include screen-m {
+      margin: 10px 0 30px 0;
+      min-height: 100vh;
+    }
+  }
+}
+
+.round-gradient {
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0.6;
+  z-index: -10;
+
+  &:nth-child(1) {
+    top: -10%;
+    left: -50%;
+  }
+
+  &:nth-child(2) {
+    bottom: -50%;
+    right: -50%;
+
+    @include screen-s {
+      display: none;
+    }
+  }
+
+  &:nth-child(3) {
+    top: -50%;
+    right: 0%;
+  }
+}
+
+.round-gradient_first {
+  background: radial-gradient($color-first 0%,
+      transparent 50%,
+      transparent 100%);
+}
+
+.round-gradient_second {
+  background: radial-gradient($color-second 0%,
+      transparent 50%,
+      transparent 100%);
+}
+
+.round-gradient_third {
+  background: radial-gradient($color-third 0%,
+      transparent 70%,
+      transparent 100%);
+}
