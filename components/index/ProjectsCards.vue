@@ -40,6 +40,12 @@ export default {
           link: 'https://www.zlawyer.fr/logiciel-avocats/'
         },
         {
+          title: 'Silver',
+          description: "Intégration de la maquette animée de <a class='links' href='https://dribbble.com/TheGlyphStudio' target='_blank'>The Glyph Studio</a>",
+          image: '/images/projects/silver.png',
+          link: 'https://silver-matteocourquin.vercel.app/'
+        },
+        {
           title: 'NL • Architecture',
           description: "Intégration de la maquette de <a class='links' href='https://dribbble.com/shots/16631037-Architectural-Studio-Landing-Page' target='_blank'>Nadya Lazurenko</a>",
           image: '/images/projects/nlArchitecture.png',

@@ -50,6 +50,12 @@ export default {
           link: 'https://www.zlawyer.fr/logiciel-avocats/',
         },
         {
+          title: 'Silver',
+          description: "Intégration de la maquette de <a class='links' href='https://dribbble.com/TheGlyphStudio' target='_blank'>The Glyph Studio</a>",
+          image: '/images/projects/silver.png',
+          link: 'https://silver-matteocourquin.vercel.app/',
+        },
+        {
           title: 'NL • Architecture',
           description:
             "Intégration de la maquette de <a class='links' href='https://dribbble.com/shots/16631037-Architectural-Studio-Landing-Page' target='_blank'>Nadya Lazurenko</a>",
@@ -62,13 +68,6 @@ export default {
             "Un projet d'études voué a sensibiliser sur les problématiques étudiantes.",
           image: '/images/projects/semicolon.png',
           link: 'https://semicolon.vercel.app',
-        },
-        {
-          title: 'La Villa Savoye',
-          description:
-            "Un de mes projets de fin d'année préparatoire. Le thème du site était 'un monument ou un lieu culte en île-de-france'. <br>J'ai choisi <a href='https://www.villa-savoye.fr/' target='_blank' class='links'>la Villa Savoye</a> en raison de ma passion pour l'architecture et <a href='http://www.fondationlecorbusier.fr/' target='_blank' class='links'>le Corbusier</a>.",
-          image: '/images/projects/villaSavoye.png',
-          link: 'https://lavillasavoye-matteocourquin.herokuapp.com/index.php',
         },
         {
           title: 'La défense',

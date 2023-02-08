@@ -150,7 +150,7 @@ export default {
 
   @include screen-xs {
     grid-template-columns: 1fr;
-    padding: calc(clamp(20px, 4vw, 60px) + clamp(20px, 3.5vw, 60px)) clamp(20px, 4vw, 60px);
+    padding: 200px calc(clamp(20px, 4vw, 60px) + clamp(20px, 3.5vw, 60px)) clamp(20px, 4vw, 60px) calc(clamp(20px, 4vw, 60px) + clamp(20px, 3.5vw, 60px));
     min-height: 100vh;
   }
 
