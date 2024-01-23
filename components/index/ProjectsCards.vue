@@ -35,7 +35,7 @@ export default {
       projects: [
         {
           title: 'zLawyer',
-          description: "<a class='links' href='https://www.zlawyer.fr/logiciel-avocats/' target='_blank'>zLawyer</a> est un logiciel de gestion de cabinets d'avocats. Ils m'ont contacter pour refonte leur site afin de vendre et présenter leur logiciel. <br><br>J'ai réalisé le projet en collaboration avec <a class='links' href='https://august1.dev' target='_blank'>Augustin Briolon</a>",
+          description: "<a class='links' href='https://www.zlawyer.fr/logiciel-avocats/' target='_blank'>zLawyer</a> est un logiciel de gestion de cabinets d'avocats. Ils m'ont contacté pour la refonte de leur site afin de vendre et présenter leur logiciel. <br><br>J’ai réalisé le projet en collaboration avec <a class='links' href='https://august1.dev' target='_blank'>Augustin Briolon</a>.",
           image: '/images/projects/zLawyer.png',
           link: 'https://www.zlawyer.fr/logiciel-avocats/'
         },

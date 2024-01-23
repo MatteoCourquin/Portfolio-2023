@@ -45,7 +45,7 @@ export default {
         {
           title: 'zLawyer',
           description:
-            "<a class='links' href='https://www.zlawyer.fr/logiciel-avocats/' target='_blank'>zLawyer</a> est un logiciel de gestion de cabinets d'avocats. Ils m'ont contacter pour refonte leur site afin de vendre et présenter leur logiciel. <br><br>J'ai réalisé le projet en collaboration avec <a class='links' href='https://august1.dev' target='_blank'>Augustin Briolon</a>",
+            "<a class='links' href='https://www.zlawyer.fr/logiciel-avocats/' target='_blank'>zLawyer</a> est un logiciel de gestion de cabinets d'avocats. Ils m'ont contacté pour la refonte de leur site afin de vendre et présenter leur logiciel. <br><br>J’ai réalisé le projet en collaboration avec <a class='links' href='https://august1.dev' target='_blank'>Augustin Briolon</a>.",
           image: '/images/projects/zLawyer.png',
           link: 'https://www.zlawyer.fr/logiciel-avocats/',
         },
@@ -65,14 +65,14 @@ export default {
         {
           title: 'Semicolon',
           description:
-            "Un projet d'études voué a sensibiliser sur les problématiques étudiantes.",
+            "Un projet d'étude voué à sensibiliser sur les problématiques étudiantes.",
           image: '/images/projects/semicolon.png',
           link: 'https://semicolon.vercel.app',
         },
         {
           title: 'La défense',
           description:
-            "Un projet d'études dont le but était de réaliser une maquette UI. J'ai décidé de l'intégrer pour m'amuser !",
+            "Un projet d'étude dont le but était de réaliser une maquette UI. J'ai décidé de l'intégrer pour m'amuser !",
           image: '/images/projects/laDefense.png',
           link: 'https://la-defense.courqu.in/index.html',
         },
@@ -141,7 +141,7 @@ export default {
 
       padding: 20px;
 
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;

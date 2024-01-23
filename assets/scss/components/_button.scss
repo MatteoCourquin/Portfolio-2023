@@ -67,6 +67,7 @@
   }
 }
 .button {
+  cursor: pointer;
   &:hover::after {
     transition:
       height 0.25s ease-out,

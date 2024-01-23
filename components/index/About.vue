@@ -8,30 +8,29 @@
         <div class="line"></div>
         <img preload src="/images/logos/quote.svg" quality="10" class="anim-about quote" alt="" />
 
-        <p class="anim-about">Je m'appelle Matteo, je suis developpeur front-end depuis {{ years }} ans.</p>
+        <p class="anim-about">Je suis Matteo, développeur, depuis {{ years }} ans.</p>
 
-        <p class="anim-about">Initialement parti pour être architecte, c'est lors du confinement que ma vie a pris un
-          autre tournant.</p>
+        <p class="anim-about">Initialement intéressé par l'architecture, ma passion pour le développement web a émergé
+          pendant le confinement, consolidée par des études à l'<a class="links" href="https://www.iim.fr/"
+            target="_blank">IIM</a>.</p>
 
         <p class="anim-about">Tout a commencé depuis <a class="links" href="https://openclassrooms.com/"
             target="_blank">OpenClassrooms</a>. Le premier site vers lequel on se dirige lorsque l'on s'intéresse au web
-          ! J'ai ensuite approfondi à l’<a class="links" href="https://www.iim.fr/" target="_blank">IIM</a>, l'une des
-          meilleures école du web. C'est là où le développement web a réellement commencé à me passionner.</p>
+          !</p>
 
-        <p class="anim-about">Aujourd'hui, je suis en alternance chez <a class="links" href="https://www.fortuneo.fr/"
-            target="_blank">Fortuneo</a> où j'apprends énormément. Il n'y a que la mise en pratique pour assoir ses
-          connaissances. Entouré d'experts sur le métier mes compétences accroissent de jour en jour.</p>
+        <p class="anim-about">Actuellement en alternance chez <a class="links" href="https://www.fortuneo.fr/"
+            target="_blank">Fortuneo</a>, entouré d'experts, je perfectionne mes compétences jour après jour. </p>
 
-        <p class="anim-about">Je suis quelqu'un de pointilleux, persévérant et mes études d'architecture m'ont apporté
-          une certaine sensibilité esthétique et design. Ma vision graphique n’en sera que du plus.</p>
+        <p class="anim-about">Ma rigueur, ma persévérance et ma sensibilité esthétique se reflètent dans ma vision du
+          développement.</p>
 
         <p class="anim-about">« Un code propre en vaut 10 »</p>
 
         <a href="documents/CV.pdf" target="_blank"><button class="anim-about button">Mon CV</button></a>
       </div>
       <div class="anim-about about-cv">
-        <a href="documents/CV.pdf" target="_blank"><img sizes="sm:100vw md:100vw lg:100vw"
-            alt="cv de matteo courquin" src="/images/about/CV.png" /></a>
+        <a href="documents/CV.pdf" target="_blank"><img sizes="sm:100vw md:100vw lg:100vw" alt="cv de matteo courquin"
+            src="/images/about/CV.png" /></a>
       </div>
     </section>
   </div>
@@ -70,7 +69,7 @@ export default {
     })
 
     let dateNow = new Date()
-    let codingSince = new Date('Wed Apr 15 2020 16:00:00 GMT+0100')
+    let codingSince = new Date('Wed Jan 15 2019 16:00:00 GMT+0100')
 
     let tmp = dateNow - codingSince;
 

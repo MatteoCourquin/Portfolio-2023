@@ -3,9 +3,8 @@
     <div class="hero-description">
       <h1 class="anim-hero">Developpeur <br />web</h1>
       <p class="anim-hero">
-        Développeur de passion, mon travail n'est qu'une partie de plaisir.
-        Selon moi, c'est primordial pour faire des projets soignés et de qualité
-        ! <br /><br />
+        Développeur de passion, mon travail n'est qu'une partie de plaisir. Selon moi, cette passion est essentielle pour
+        garantir la réalisation de projets soignés et de haute qualité !<br /><br />
         Votre projet sera peut-être le prochain ?
       </p>
       <nuxt-link to="/contact"><button class="button anim-hero">Contact</button></nuxt-link>
@@ -39,7 +38,7 @@
       <div class="seconds coding-since-lines anim-hero"></div>
       <p class="seconds coding-since-items anim-hero">
         <span class="number"><span v-if="showZero(seconds)">0</span>{{ seconds }}</span>{{
-  isPlural(seconds, 'seconde')
+          isPlural(seconds, 'seconde')
         }}
       </p>
     </div>
