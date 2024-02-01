@@ -108,7 +108,9 @@ header {
     li {
       list-style: none;
       .links {
-        font-family: $font-montserrat-black !important;
+        font-family: $font-switzer !important;
+        font-weight: bolder;
+        text-transform: uppercase;
       }
 
       font-size: clamp(40px, 5vw, 80px);
@@ -128,6 +130,7 @@ header.active {
   height: 100vh;
 
   position: fixed;
+  top: 0;
   right: 0;
 
   @media screen and (min-width : 2000px) {

@@ -1,9 +1,24 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
+
+  max-width: 2000px;
+  margin: 0 auto;
+
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(30px);
 }

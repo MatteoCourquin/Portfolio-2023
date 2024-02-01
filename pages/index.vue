@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div class="round-gradient round-gradient_first"></div>
-    <div class="round-gradient round-gradient_first"></div>
-    <div class="round-gradient round-gradient_third"></div>
     <Header />
     <Hero />
     <ProjectsCards />
@@ -30,19 +27,6 @@ export default {
     return {};
   },
   methods: {
-    followMouse() {
-      let targets = gsap.utils.toArray('.round-gradient');
-      window.addEventListener('mousemove', (e) => {
-        gsap.to(targets, {
-          duration: 3,
-          x: e.clientX / 10,
-          y: e.clientY / 10,
-          ease: 'power4.out',
-          overwrite: 'auto',
-          stagger: 0.08,
-        });
-      });
-    },
     addBgTitle(title) {
       if (window.scrollY > (title.offsetTop - 1)) {
         title.classList.add('title-section-background');
@@ -89,20 +73,10 @@ export default {
 
     this.animGsapToBottom();
     this.changeTitle();
-    this.followMouse();
   },
 };
 </script>
 
 <style lang="scss">
 @import '~/assets/scss/main.scss';
-
-body {
-  position: relative;
-
-  max-width: 2000px;
-  margin: 0 auto;
-
-  @include background-image;
-}
 </style>

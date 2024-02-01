@@ -88,10 +88,10 @@ footer {
   }
 
   p {
-    font-family: $font-montserrat-bold;
+    font-family: $font-switzer;
 
     span {
-      font-family: $font-montserrat-regular;
+      font-family: $font-switzer;
     }
   }
 }

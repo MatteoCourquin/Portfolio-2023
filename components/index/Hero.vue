@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="hero-description">
-      <h1 class="anim-hero">Developpeur <br />web</h1>
+      <h1 class="anim-hero">Développeur Full Stack</h1>
       <p class="anim-hero">
         Développeur de passion, mon travail n'est qu'une partie de plaisir. Selon moi, cette passion est essentielle pour
         garantir la réalisation de projets soignés et de haute qualité !<br /><br />
@@ -91,20 +91,23 @@ export default {
         }
       }, 1000);
     },
+    animationHero() {
+      let animHero = gsap.utils.toArray('.anim-hero');
+      animHero.forEach((item, index) => {
+        let tl = gsap.timeline();
+        tl.to(item, {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+        }).delay(index * 0.1);
+      });
+    }
   },
   beforeMount() {
-    let animHero = gsap.utils.toArray('.anim-hero');
-    animHero.forEach((item, index) => {
-      let tl = gsap.timeline();
-      tl.to(item, {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-      }).delay(index * 0.1);
-    });
+    this.animationHero()
 
     let dateNow = new Date();
-    let codingSince = new Date('Wed Apr 15 2020 16:00:00 GMT+0100');
+    let codingSince = new Date('Wed Apr 15 2019 16:00:00 GMT+0100');
 
     let tmp = dateNow - codingSince;
 
@@ -116,6 +119,9 @@ export default {
     this.seconds = Math.floor((tmp % 60000) / 1000);
 
     this.timeAdvance();
+  },
+  updated() {
+    this.animationHero()
   },
 };
 </script>
