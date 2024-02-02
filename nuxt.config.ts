@@ -19,7 +19,6 @@ export default defineNuxtConfig({
             'Un développeur web a votre écoute pour un projet a vos attentes !',
         },
         { name: 'format-detection', content: 'telephone=no' },
-        // Open Graph
         {
           property: 'og:title',
           content: 'Matteo Courquin | Développeur Full Stack !! 🚀',

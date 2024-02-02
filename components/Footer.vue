@@ -1,7 +1,6 @@
 <template>
   <div class="container-footer">
     <footer>
-
       <div class="social-medias">
         <a href="https://github.com/MatteoCourquin" target="_blank" aria-label="github">
           <svg xmlns="http://www.w3.org/2000/svg" height="800" width="1200" viewBox="-74.4 -120.90175 644.8 725.4105">
@@ -19,9 +18,7 @@
           </svg>
         </a>
       </div>
-
-      <p>Matteo Courquin <span>• {{ year }} • ©</span></p>
-
+      <p>Matteo Courquin © <span>{{ year }}</span></p>
     </footer>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <Header />
     <Hero />
     <ProjectsCards />
-    <Career />
+    <!-- <Career /> -->
     <About />
     <Footer />
   </div>

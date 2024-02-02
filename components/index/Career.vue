@@ -1,7 +1,7 @@
 <template>
   <div class="container-section">
     <div class="title-section">
-      <h2>Carière</h2>
+      <h2>carrière</h2>
     </div>
     <section ref="sectionCareer" class="section career">
       <div class="slider-section">

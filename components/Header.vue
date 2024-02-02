@@ -82,16 +82,18 @@ header {
   justify-content: center;
   align-items: center;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
-  transform: translateY(-200%);
+  transform: translateY(-100%);
+
+  visibility: hidden;
 
   transition: $current-transition;
   z-index: 99;
 
-  @include background-image;
+  backdrop-filter: blur(50px);
 
   @include screen-m {
     padding-right: 0;
@@ -121,7 +123,7 @@ header {
 }
 
 header.active {
-  position: fixed;
+  visibility: visible;
   transform: translateY(0);
 }
 

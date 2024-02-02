@@ -11,7 +11,7 @@
   border: none;
   cursor: pointer;
   mix-blend-mode: darken;
-  transition: color 0.3s, background 0.3s;
+  transition: color .3s, border .3s, background .3s;
   &:hover {
     background: $color-white;
     color: $color-black;

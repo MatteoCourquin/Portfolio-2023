@@ -48,7 +48,7 @@ export default {
   }
 
   p {
-    font-family: $font-bebasNeue-regular;
+    font-family: $font-switzer;
     font-size: clamp(16px, 1.5vw, 20px);
   }
 

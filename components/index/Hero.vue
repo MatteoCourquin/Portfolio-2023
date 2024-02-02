@@ -12,36 +12,38 @@
     <div class="container-image anim-hero">
       <img alt="matteo courquin" preload sizes="sm:100vw md:100vw lg:100vw" src="/images/profile-img.png" />
     </div>
-    <div class="container-coding-since">
-      <p class="anim-hero">depuis</p>
-      <p class="coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(years)">0</span>{{ years }}</span>{{ isPlural(years, 'an') }}
-      </p>
-      <div class="months coding-since-lines anim-hero"></div>
-      <p class="months coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(months)">0</span>{{ months }}</span>mois
-      </p>
-      <div class="days coding-since-lines anim-hero"></div>
-      <p class="days coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(days)">0</span>{{ days }}</span>{{ isPlural(days, 'jour') }}
-      </p>
-      <div class="hours coding-since-lines anim-hero"></div>
-      <p class="hours coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(hours)">0</span>{{ hours }}</span>{{ isPlural(hours, 'heure') }}
-      </p>
-      <div class="minutes coding-since-lines anim-hero"></div>
-      <p class="minutes coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(minutes)">0</span>{{ minutes }}</span>{{
-          isPlural(minutes, 'minute')
-        }}
-      </p>
-      <div class="seconds coding-since-lines anim-hero"></div>
-      <p class="seconds coding-since-items anim-hero">
-        <span class="number"><span v-if="showZero(seconds)">0</span>{{ seconds }}</span>{{
-          isPlural(seconds, 'seconde')
-        }}
-      </p>
-    </div>
+    <client-only>
+      <div class="container-coding-since">
+        <p class="anim-hero">depuis</p>
+        <p class="coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(years)">0</span>{{ years }}</span>{{ isPlural(years, 'an') }}
+        </p>
+        <div class="months coding-since-lines anim-hero"></div>
+        <p class="months coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(months)">0</span>{{ months }}</span>mois
+        </p>
+        <div class="days coding-since-lines anim-hero"></div>
+        <p class="days coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(days)">0</span>{{ days }}</span>{{ isPlural(days, 'jour') }}
+        </p>
+        <div class="hours coding-since-lines anim-hero"></div>
+        <p class="hours coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(hours)">0</span>{{ hours }}</span>{{ isPlural(hours, 'heure') }}
+        </p>
+        <div class="minutes coding-since-lines anim-hero"></div>
+        <p class="minutes coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(minutes)">0</span>{{ minutes }}</span>{{
+            isPlural(minutes, 'minute')
+          }}
+        </p>
+        <div class="seconds coding-since-lines anim-hero"></div>
+        <p class="seconds coding-since-items anim-hero">
+          <span class="number"><span v-if="showZero(seconds)">0</span>{{ seconds }}</span>{{
+            isPlural(seconds, 'seconde')
+          }}
+        </p>
+      </div>
+    </client-only>
   </div>
 </template>
 
@@ -103,7 +105,7 @@ export default {
       });
     }
   },
-  beforeMount() {
+  mounted() {
     this.animationHero()
 
     let dateNow = new Date();
@@ -205,8 +207,8 @@ export default {
     }
 
     .coding-since-lines {
-      width: 2px;
-      height: clamp(20px, 3.5vw, 60px);
+      width: 10px;
+      height: 10px;
 
       background: $color-black;
     }
@@ -214,7 +216,7 @@ export default {
     .coding-since-items {
       padding: 0 20px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
 
       .number {
         margin-right: 5px;
